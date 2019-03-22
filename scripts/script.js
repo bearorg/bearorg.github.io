@@ -27,7 +27,7 @@ function checkOne(){
 	var cl = document.getElementById("clue1");
 	
 	if (p.value == c || h >= i){
-		t.innerHTML = "Correct.";
+		t.innerHTML = "One was the Dean of Women and a Professor of Spanish.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
@@ -44,7 +44,7 @@ function checkTwo(){
 	var cl = document.getElementById("clue2");
 	
 	if (p.value == c || h >= i){
-		t.innerHTML = "Correct.";
+		t.innerHTML = "One was a Professor of Physics, heading the department.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
@@ -61,7 +61,7 @@ function checkThree(){
 	var cl = document.getElementById("clue3");
 	
 	if (p.value == c || h >= i){
-		t.innerHTML = "Correct.";
+		t.innerHTML = "One was an educator, known for working to open colleges to all.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
@@ -77,7 +77,7 @@ function checkFour(){
 	var cl = document.getElementById("clue4");
 	
 	if (p.value == c || h >= i){
-		t.innerHTML = "Correct.";
+		t.innerHTML = "And the last was from far away and an accomplished linguist.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
