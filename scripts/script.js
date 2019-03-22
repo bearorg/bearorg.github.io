@@ -23,12 +23,15 @@ function checkOne(){
 	var t = document.getElementById("out1");
 	var p = document.getElementById("p1");
 	var x = document.getElementById("code1");
+	var l = document.getElementById("loc1");
 	
 	var cl = document.getElementById("clue1");
 	
 	if (p.value == c || h >= i){
 		t.innerHTML = "One was the Dean of Women and a Professor of Spanish.";
 		x.innerHTML = "UF FRIRA FVK FRIRA";
+		l.innerHTML = "You'll find your next clue at ...";
+		//alert(l);
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
@@ -41,6 +44,7 @@ function checkTwo(){
 	var t = document.getElementById("out2");
 	var p = document.getElementById("p2");
 	var x = document.getElementById("code2");
+	var l = document.getElementById("loc2");
 	
 	var cl = document.getElementById("clue2");
 	var v = document.getElementById("pic2");
@@ -48,6 +52,7 @@ function checkTwo(){
 	if (p.value == c || h >= i){
 		t.innerHTML = "One was a Professor of Physics, heading the department.";
 		x.innerHTML = "J JAX ZFMR";
+		l.innerHTML = "You'll find your next clue at ...";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
@@ -62,12 +67,14 @@ function checkThree(){
 	var t = document.getElementById("out3");
 	var p = document.getElementById("p3");
 	var x = document.getElementById("code3");
+	var l = document.getElementById("loc3");
 	
 	var cl = document.getElementById("clue3");
 	
 	if (p.value == c || h >= i){
 		t.innerHTML = "One was an educator, known for working to open colleges to all.";
 		x.innerHTML = "ABBBAABBABAABAA ABBABABAAAABBABAABAA BBAABAABAABAAABABBBA BAABAABAAA";
+		l.innerHTML = "You'll find your next clue at ...";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
@@ -80,12 +87,13 @@ function checkFour(){
 	var t = document.getElementById("out4");
 	var p = document.getElementById("p4");
 	var x = document.getElementById("code4");
+	var l = document.getElementById("loc4");
 	
 	var cl = document.getElementById("clue4");
 	
 	if (p.value == c || h >= i){
 		t.innerHTML = "And the last was from far away and an accomplished linguist.";
-		x.innerHTML = "";
+		x.innerHTML = "You're not quite done. There are no more clues to find here.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
