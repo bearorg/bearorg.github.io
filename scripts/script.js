@@ -19,7 +19,7 @@ function checkAll(){
 }
 function checkOne(){
 	var i = 1;
-	var c = "password";
+	var c = "Dubhe";
 	var t = document.getElementById("out1");
 	var p = document.getElementById("p1");
 	
@@ -37,7 +37,7 @@ function checkOne(){
 }
 function checkTwo(){
 	var i = 2;
-	var c = "password";
+	var c = "Loth";
 	var t = document.getElementById("out2");
 	var p = document.getElementById("p2");
 	
@@ -54,7 +54,7 @@ function checkTwo(){
 }
 function checkThree(){
 	var i = 3;
-	var c = "password";
+	var c = "Copal";
 	var t = document.getElementById("out3");
 	var p = document.getElementById("p3");
 	
@@ -70,7 +70,7 @@ function checkThree(){
 }
 function checkFour(){
 	var i = 4;
-	var c = "password";
+	var c = "Bemiss";
 	var t = document.getElementById("out4");
 	var p = document.getElementById("p4");
 	
