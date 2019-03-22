@@ -30,7 +30,7 @@ function checkOne(){
 	if (p.value == c || h >= i){
 		t.innerHTML = "One was the Dean of Women and a Professor of Spanish.";
 		x.innerHTML = "UF FRIRA FVK FRIRA";
-		l.innerHTML = "You'll find your next clue at ...";
+		l.innerHTML = "38.036176&deg, -78.513548&deg";
 		//alert(l);
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
@@ -52,7 +52,7 @@ function checkTwo(){
 	if (p.value == c || h >= i){
 		t.innerHTML = "One was a Professor of Physics, heading the department.";
 		x.innerHTML = "J JAX ZFMR";
-		l.innerHTML = "You'll find your next clue at ...";
+		l.innerHTML = "In the place you call home, the deepest point behind the furthest door.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
@@ -74,7 +74,7 @@ function checkThree(){
 	if (p.value == c || h >= i){
 		t.innerHTML = "One was an educator, known for working to open colleges to all.";
 		x.innerHTML = "ABBBAABBABAABAA ABBABABAAAABBABAABAA BBAABAABAABAAABABBBA BAABAABAAA";
-		l.innerHTML = "You'll find your next clue at ...";
+		l.innerHTML = "At home, the highest door one cannot enter.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
