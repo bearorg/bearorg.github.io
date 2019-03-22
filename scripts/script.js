@@ -19,7 +19,7 @@ function checkAll(){
 }
 function checkOne(){
 	var i = 1;
-	var c = "Dubhe";
+	var c = "Wisdom";
 	var t = document.getElementById("out1");
 	var p = document.getElementById("p1");
 	var x = document.getElementById("code1");
@@ -40,7 +40,7 @@ function checkOne(){
 }
 function checkTwo(){
 	var i = 2;
-	var c = "Loth";
+	var c = "Force";
 	var t = document.getElementById("out2");
 	var p = document.getElementById("p2");
 	var x = document.getElementById("code2");
@@ -63,7 +63,7 @@ function checkTwo(){
 }
 function checkThree(){
 	var i = 3;
-	var c = "Copal";
+	var c = "Strength";
 	var t = document.getElementById("out3");
 	var p = document.getElementById("p3");
 	var x = document.getElementById("code3");
@@ -83,7 +83,7 @@ function checkThree(){
 }
 function checkFour(){
 	var i = 4;
-	var c = "Bemiss";
+	var c = "Beauty";
 	var t = document.getElementById("out4");
 	var p = document.getElementById("p4");
 	var x = document.getElementById("code4");
@@ -93,7 +93,7 @@ function checkFour(){
 	
 	if (p.value == c || h >= i){
 		t.innerHTML = "And the last was from far away and an accomplished linguist.";
-		x.innerHTML = "You're not quite done. There are no more clues to find here.";
+		l.innerHTML = "You're not quite done. There are no more clues to find here.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
