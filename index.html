@@ -2,46 +2,17 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<script src="scripts/script_obs.js"></script>
-		<script> readCookie(); </script>
 		<title>UMK</title>
 	</head>
-	<body onload="checkAll();">
-		<h1>Password Entry Page</h1>
-		<h3> Four houses, named after four individuals, each recognized for significant accomplishments. </h3>
-		<form>
-			Password 1:
-			<input type="text" id="p1">
-			<input type="submit" id="p1s" value="Submit" onclick="checkOne();">
-			<p id="out1"> </p>
-			<img src="images/vigenere.png" height="500px" style="display:none" id="pic1">
-			<h4 style="display:none" id="clue1">Important phrase: ursa</h4>
-		</form>
-		<form>
-			Password 2:
-			<input type="text" id="p2">
-			<input type="submit" id="p2s" value="Submit" onclick="checkTwo();">
-			<p id="out2"> </p>
-			<h4 id="clue2" style="display:none"> Rotting 13 apples. </h4>
-		</form>
-		<form>
-			Password 3:
-			<input type="text" id="p3">
-			<input type="submit" id="p3s" value="Submit" onclick="checkThree();">
-			<p id="out3"> </p>
-			<h4 id="clue3" style="display:none"> Baconian is a breakfast food. </h4>
-		</form>
-		<form>
-			Password 4:
-			<input type="text" id="p4">
-			<input type="submit" id="p4s" value="Submit" onclick="checkFour();">
-			<p id="out4"> </p>
-			<audio controls style="display:none" id="clue4">
-				<source src="audio/morse.oga" type="audio/ogg">
-			Try on another device.
-			</audio>
-		</form>
-		<br>
+	<body>
+		<div style="display: flex; justify-content: center; height: 100%;">
+				<div>
+					<a href="init.html">
+						<img src="images/bear.png" style="position:absolute; margin:auto;top:0;left:0;right:0;bottom:0;" align="middle">
+					</a>
+					<h7>(Psst, click the bear!)</h7>
+				</div>
+		</div>
 		<br>
 	</body>
 </html>
