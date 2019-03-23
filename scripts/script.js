@@ -121,6 +121,6 @@ function fcCheck(){
 		}
 	}
 	else{
-		alert("Incorrect");
+		console.log("incorrect");
 	}
 }
