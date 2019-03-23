@@ -114,7 +114,7 @@ function fcCheck(){
 	
 	var day = "Monday";
 	
-	if (tc1.value == "Wisdom" && tc2.value == "Force" && tc3.value == "Strength" && tc4.value == "Beauty"){
+	if (h == 5 || (tc1.value == "Wisdom" && tc2.value == "Force" && tc3.value == "Strength" && tc4.value == "Beauty")){
 		ft.innerHTML = "Congrats on making it this far! Meet at the archway on this upcoming " + day + " at " + time +".";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
