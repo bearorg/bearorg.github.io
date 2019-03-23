@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<script src="scripts/script_obs.js"></script>
+		<script src="scripts/script.js"></script>
 		<script> readCookie(); </script>
 		<title>UMK</title>
 	</head>
@@ -55,6 +55,15 @@
 			<p id="loc4"> </p>
 		</form>
 		<hr>
+		<form>
+			Final challenge:
+			<input type="text" id="fc1" size="6">
+			<input type="text" id="fc2" size="6">
+			<input type="text" id="fc3" size="6">
+			<input type="text" id="fc4" size="6">
+			<input type="button" value="Submit" onclick="fcCheck();">
+		</form>
+		<p id="fcCloser"></p>
 		<br>
 		<br>
 	</body>

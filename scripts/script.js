@@ -16,6 +16,7 @@ function checkAll(){
 	checkTwo();
 	checkThree();
 	checkFour();
+	fcCheck();
 }
 function checkOne(){
 	var i = 1;
@@ -99,6 +100,27 @@ function checkFour(){
 		}
 		cl.style.display = "block";
 	}
+}
+function fcCheck(){
+	var i = 5;
+	var tc1 = document.getElementById("fc1");	
+	var tc2 = document.getElementById("fc2");
+	var tc3 = document.getElementById("fc3");	
+	var tc4 = document.getElementById("fc4");
 	
+	var ft = document.getElementById("fcCloser");
 	
+	var time = "10:13 PM";
+	
+	var day = "Monday";
+	
+	if (tc1.value == "Wisdom" && tc2.value == "Force" && tc3.value == "Strength" && tc4.value == "Beauty"){
+		ft.innerHTML = "Congrats on making it this far! Meet at the archway on this upcoming " + day + " at " + time +".";
+		if (h < i){
+			document.cookie = "highestsolved="+i+";";
+		}
+	}
+	else{
+		alert("Incorrect");
+	}
 }
