@@ -30,7 +30,7 @@ function checkOne(){
 	if (p.value == c || h >= i){
 		t.innerHTML = "One was the Dean of Women and a Professor of Spanish.";
 		x.innerHTML = "UF FRIRA FVK FRIRA";
-		l.innerHTML = "38.036176&deg, -78.513548&deg";
+		l.innerHTML = "38.035923, -78.51315";
 		//alert(l);
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
