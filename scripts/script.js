@@ -93,7 +93,7 @@ function checkFour(){
 	
 	if (p.value == c || h >= i){
 		t.innerHTML = "And the last was from far away and an accomplished linguist.";
-		l.innerHTML = "You're not quite done. There are no more clues to find here.";
+		l.innerHTML = "Page 7.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
