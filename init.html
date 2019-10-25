@@ -2,23 +2,24 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<script src="scripts/script_obs.js"></script>
+		<script src="scripts/script.js"></script>
 		<script> readCookie(); </script>
 		<title>UMK</title>
 	</head>
 	<body onload="checkAll();">
-		<h1>Password Entry Page</h1> 
-		<h3>Four houses, named after four individuals, each recognized for significant accomplishments. </h3>
-		<p>The man who looked looked to the sky and took flight hides a secret at his guarded public board.</p>
+		<h1>Password Entry Page</h1>
+		<h3>38.0363681, -78.5058978 to begin.</h3>
 		<hr>
 		<form>
 			Password 1:
 			<input type="text" id="p1">
 			<input type="submit" id="p1s" value="Submit" onclick="checkOne();">
 			<p id="out1"> </p>
-			<p id="code1"> </p>
-			<h4 id="clue1" style="display:none"> Rotting 13 apples. </h4>
-			<p id="loc1"> </p>
+			<p id="clue1"> </p>
+			<audio controls style="display:none" id="code1">
+				<source src="audio/morse.wav" type="audio/wav">
+			Try on another device.
+			</audio>
 		</form>
 		<hr>
 		<form>
@@ -27,8 +28,7 @@
 			<input type="submit" id="p2s" value="Submit" onclick="checkTwo();">
 			<p id="out2"> </p>
 			<p id="code2"> </p>
-			<img src="images/vigenere.png" height="500px" style="display:none" id="pic2">
-			<h4 style="display:none" id="clue2">Important phrase: ursa</h4>
+			<p style="display:none" id="clue2">Et tu, Brute?</p>
 			<p id="loc2"> </p>
 		</form>
 		<hr>
@@ -48,11 +48,18 @@
 			<input type="submit" id="p4s" value="Submit" onclick="checkFour();">
 			<p id="out4"> </p>
 			<p id="code4"> </p>
-			<audio controls style="display:none" id="clue4">
-				<source src="audio/morse.oga" type="audio/ogg">
-			Try on another device.
-			</audio>
+
 			<p id="loc4"> </p>
+		</form>
+		<hr>
+		<form>
+			Password 5:
+			<input type="text" id="p5">
+			<input type="submit" id="p5s" value="Submit" onclick="checkFour();">
+			<p id="out5"> </p>
+			<p id="code5"> </p>
+			<h4 id="clue5" style="display:none"> Baconian is a breakfast food. </h4>
+			<p id="loc5"> </p>
 		</form>
 		<hr>
 		<form>

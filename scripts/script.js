@@ -21,17 +21,12 @@ function checkAll(){
 function checkOne(){
 	var i = 1;
 	var c = "Wisdom";
-	var t = document.getElementById("out1");
+
 	var p = document.getElementById("p1");
-	var x = document.getElementById("code1");
-	var l = document.getElementById("loc1");
-	
-	var cl = document.getElementById("clue1");
-	
+
+	var cl = document.getElementById("code1");
+
 	if (p.value == c || h >= i){
-		t.innerHTML = "One was the Dean of Women and a Professor of Spanish.";
-		x.innerHTML = "UF FRIRA FVK FRIRA";
-		l.innerHTML = "38.035923, -78.51315";
 		//alert(l);
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
@@ -42,36 +37,31 @@ function checkOne(){
 function checkTwo(){
 	var i = 2;
 	var c = "Force";
-	var t = document.getElementById("out2");
+
 	var p = document.getElementById("p2");
+
 	var x = document.getElementById("code2");
-	var l = document.getElementById("loc2");
-	
+
 	var cl = document.getElementById("clue2");
-	var v = document.getElementById("pic2");
-	
+
 	if (p.value == c || h >= i){
-		t.innerHTML = "One was a Professor of Physics, heading the department.";
-		x.innerHTML = "J JAX ZFMR";
-		l.innerHTML = "In the place you call home, the deepest point behind the furthest door.";
+		x.innerHTML = "AMXL MX FIMRK JEPP, RSA ASYPH FI E KVIEX XMQI JSV E FEPP.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
 		cl.style.display = "block";
-		v.style.display = "block";
 	}
-	
+
 }
 function checkThree(){
 	var i = 3;
 	var c = "Strength";
-	var t = document.getElementById("out3");
+
 	var p = document.getElementById("p3");
 	var x = document.getElementById("code3");
-	var l = document.getElementById("loc3");
-	
+
 	var cl = document.getElementById("clue3");
-	
+
 	if (p.value == c || h >= i){
 		t.innerHTML = "One was an educator, known for working to open colleges to all.";
 		x.innerHTML = "ABBBAABBABAABAA ABBABABAAAABBABAABAA BBAABAABAABAAABABBBA BAABAABAAA";
@@ -89,9 +79,28 @@ function checkFour(){
 	var p = document.getElementById("p4");
 	var x = document.getElementById("code4");
 	var l = document.getElementById("loc4");
-	
+
 	var cl = document.getElementById("clue4");
-	
+
+	if (p.value == c || h >= i){
+		t.innerHTML = "And the last was from far away and an accomplished linguist.";
+		l.innerHTML = "Page 7.";
+		if (h < i){
+			document.cookie = "highestsolved="+i+";";
+		}
+		l.style.display = "block";
+	}
+}
+function checkFive(){
+	var i = 5;
+	var c = "Beauty";
+	var t = document.getElementById("out5");
+	var p = document.getElementById("p5");
+	var x = document.getElementById("code5");
+	var l = document.getElementById("loc5");
+
+	var cl = document.getElementById("clue5");
+
 	if (p.value == c || h >= i){
 		t.innerHTML = "And the last was from far away and an accomplished linguist.";
 		l.innerHTML = "Page 7.";
@@ -102,20 +111,20 @@ function checkFour(){
 	}
 }
 function fcCheck(){
-	var i = 5;
-	var tc1 = document.getElementById("fc1");	
+	var i = 6;
+	var tc1 = document.getElementById("fc1");
 	var tc2 = document.getElementById("fc2");
-	var tc3 = document.getElementById("fc3");	
+	var tc3 = document.getElementById("fc3");
 	var tc4 = document.getElementById("fc4");
-	
+
 	var ft = document.getElementById("fcCloser");
-	
+
 	var time = "10:13 PM";
-	
+
 	var day = "Monday";
-	
-	if (h == 5 || (tc1.value == "Wisdom" && tc2.value == "Force" && tc3.value == "Strength" && tc4.value == "Beauty")){
-		ft.innerHTML = "Congrats on making it this far! Meet at the archway on this upcoming " + day + " at " + time +".";
+
+	if (h == i || (tc1.value == "Wisdom" && tc2.value == "Force" && tc3.value == "Strength" && tc4.value == "Beauty")){
+		ft.innerHTML = "Congrats on making it this far! Email <a href='ursa@ursamajorsociety.org'>ursa@ursamajorsociety.org</a> with the code 'Mary Munford' to receive your initiation information.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
