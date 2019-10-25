@@ -20,7 +20,7 @@ function checkAll(){
 }
 function checkOne(){
 	var i = 1;
-	var c = "Wisdom";
+	var c = "Leadership";
 
 	var p = document.getElementById("p1");
 
@@ -36,7 +36,7 @@ function checkOne(){
 }
 function checkTwo(){
 	var i = 2;
-	var c = "Force";
+	var c = "Understanding";
 
 	var p = document.getElementById("p2");
 
@@ -55,7 +55,7 @@ function checkTwo(){
 }
 function checkThree(){
 	var i = 3;
-	var c = "Strength";
+	var c = "Generosity";
 
 	var p = document.getElementById("p3");
 	var x = document.getElementById("code3");
@@ -71,7 +71,7 @@ function checkThree(){
 }
 function checkFour(){
 	var i = 4;
-	var c = "Beauty";
+	var c = "Community";
 	var p = document.getElementById("p4");
 	var x = document.getElementById("code4");
 	var cl = document.getElementById("clue4");
