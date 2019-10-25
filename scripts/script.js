@@ -63,9 +63,6 @@ function checkThree(){
 	var cl = document.getElementById("clue3");
 
 	if (p.value == c || h >= i){
-		t.innerHTML = "One was an educator, known for working to open colleges to all.";
-		x.innerHTML = "ABBBAABBABAABAA ABBABABAAAABBABAABAA BBAABAABAABAAABABBBA BAABAABAAA";
-		l.innerHTML = "At home, the highest door one cannot enter.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
@@ -75,35 +72,12 @@ function checkThree(){
 function checkFour(){
 	var i = 4;
 	var c = "Beauty";
-	var t = document.getElementById("out4");
 	var p = document.getElementById("p4");
 	var x = document.getElementById("code4");
-	var l = document.getElementById("loc4");
-
 	var cl = document.getElementById("clue4");
 
 	if (p.value == c || h >= i){
-		t.innerHTML = "And the last was from far away and an accomplished linguist.";
-		l.innerHTML = "Page 7.";
-		if (h < i){
-			document.cookie = "highestsolved="+i+";";
-		}
-		l.style.display = "block";
-	}
-}
-function checkFive(){
-	var i = 5;
-	var c = "Beauty";
-	var t = document.getElementById("out5");
-	var p = document.getElementById("p5");
-	var x = document.getElementById("code5");
-	var l = document.getElementById("loc5");
-
-	var cl = document.getElementById("clue5");
-
-	if (p.value == c || h >= i){
-		t.innerHTML = "And the last was from far away and an accomplished linguist.";
-		l.innerHTML = "Page 7.";
+		x.innerHTML = "CIU FLFFT XFGR"
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
@@ -111,7 +85,7 @@ function checkFive(){
 	}
 }
 function fcCheck(){
-	var i = 6;
+	var i = 5;
 	var tc1 = document.getElementById("fc1");
 	var tc2 = document.getElementById("fc2");
 	var tc3 = document.getElementById("fc3");
