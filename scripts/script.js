@@ -20,13 +20,13 @@ function checkAll(){
 }
 function checkOne(){
 	var i = 1;
-	var c = "Leadership";
+	var c = "leadership";
 
-	var p = document.getElementById("p1");
+	var p = document.getElementById("p1").value.toLowerCase();
 
 	var cl = document.getElementById("code1");
 
-	if (p.value == c || h >= i){
+	if (p == c || h >= i){
 		//alert(l);
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
@@ -36,15 +36,15 @@ function checkOne(){
 }
 function checkTwo(){
 	var i = 2;
-	var c = "Understanding";
+	var c = "understanding";
 
-	var p = document.getElementById("p2");
+	var p = document.getElementById("p2").value.toLowerCase();
 
 	var x = document.getElementById("code2");
 
 	var cl = document.getElementById("clue2");
 
-	if (p.value == c || h >= i){
+	if (p == c || h >= i){
 		x.innerHTML = "AMXL MX FIMRK JEPP, RSA ASYPH FI E KVIEX XMQI JSV E FEPP.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
@@ -55,28 +55,29 @@ function checkTwo(){
 }
 function checkThree(){
 	var i = 3;
-	var c = "Generosity";
+	var c = "generosity";
 
-	var p = document.getElementById("p3");
+	var p = document.getElementById("p3").value.toLowerCase();
 	var x = document.getElementById("code3");
 
 	var cl = document.getElementById("clue3");
 
-	if (p.value == c || h >= i){
+	if (p == c || h >= i){
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
 		cl.style.display = "block";
+		x.style.display = "block";
 	}
 }
 function checkFour(){
 	var i = 4;
-	var c = "Community";
-	var p = document.getElementById("p4");
+	var c = "community";
+	var p = document.getElementById("p4").value.toLowerCase();
 	var x = document.getElementById("code4");
 	var cl = document.getElementById("clue4");
 
-	if (p.value == c || h >= i){
+	if (p == c || h >= i){
 		x.innerHTML = "CIU FLFFT XFGR"
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
@@ -86,18 +87,16 @@ function checkFour(){
 }
 function fcCheck(){
 	var i = 5;
-	var tc1 = document.getElementById("fc1");
-	var tc2 = document.getElementById("fc2");
-	var tc3 = document.getElementById("fc3");
-	var tc4 = document.getElementById("fc4");
+	var tc1 = document.getElementById("fc1").value.toLowerCase();
+	var tc2 = document.getElementById("fc2").value.toLowerCase();
+	var tc3 = document.getElementById("fc3").value.toLowerCase();
+	var tc4 = document.getElementById("fc4").value.toLowerCase();
+
+	console.log(tc1);
 
 	var ft = document.getElementById("fcCloser");
 
-	var time = "10:13 PM";
-
-	var day = "Monday";
-
-	if (h == i || (tc1.value == "Wisdom" && tc2.value == "Force" && tc3.value == "Strength" && tc4.value == "Beauty")){
+	if (h == i || (tc1 == "food" && (tc2 == "community" || tc2.includes("friend")) && tc3 == "wisdom" && tc4 == "peace")){
 		ft.innerHTML = "Congrats on making it this far! Email <a href='ursa@ursamajorsociety.org'>ursa@ursamajorsociety.org</a> with the code 'Mary Munford' to receive your initiation information.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";

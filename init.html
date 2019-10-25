@@ -9,11 +9,12 @@
 	<body onload="checkAll();">
 		<h1>Password Entry Page</h1>
 		<h3>38.0363681, -78.5058978 to begin.</h3>
+		<h5>(Please click each button when submitting, rather than pressing enter.) </h5>
 		<hr>
 		<form>
 			Password 1:
 			<input type="text" id="p1">
-			<input type="submit" id="p1s" value="Submit" onclick="checkOne();">
+			<input type="button" id="p1s" value="Submit" onclick="checkOne();">
 			<p id="out1"> </p>
 			<p id="clue1"> </p>
 			<audio controls style="display:none" id="code1">
@@ -25,7 +26,7 @@
 		<form>
 			Password 2:
 			<input type="text" id="p2">
-			<input type="submit" id="p2s" value="Submit" onclick="checkTwo();">
+			<input type="button" id="p2s" value="Submit" onclick="checkTwo();">
 			<p id="out2"> </p>
 			<p id="code2"> </p>
 			<p style="display:none" id="clue2">Et tu, Brute? x4</p>
@@ -35,9 +36,9 @@
 		<form>
 			Password 3:
 			<input type="text" id="p3">
-			<input type="submit" id="p3s" value="Submit" onclick="checkThree();">
+			<input type="button" id="p3s" value="Submit" onclick="checkThree();">
 			<p id="out3"> </p>
-			<img id="code3" src="images/ruff.jpg" style="width:200px">
+			<img id="code3" src="images/ruff.jpg" style="width:200px; display:none">
 			<p id="clue3" style="display:none">This one is a little rough.</p>
 			<p id="loc3"> </p>
 		</form>
@@ -45,17 +46,17 @@
 		<form>
 			Password 4:
 			<input type="text" id="p4">
-			<input type="submit" id="p4s" value="Submit" onclick="checkFour();">
+			<input type="button" id="p4s" value="Submit" onclick="checkFour();">
 			<p id="out4"> </p>
 			<p id="code4"> </p>
 
-			<p id="clue4" style='display:none;'>
+			<div id="clue4" style='display:none;'>
 				<img style='width:500px' src='images/vigenere.png'>
 				<br>
 				<h4>Important phrase: URSA</h4>
 				Sincerly,
 				<p> -Blaise de Vigenère </p>
-			</p>
+			</div>
 		</form>
 		<hr>
 		<form>
@@ -64,7 +65,7 @@
 			<input type="text" id="fc2" size="6">
 			<input type="text" id="fc3" size="6">
 			<input type="text" id="fc4" size="6">
-			<input type="submit" value="Submit" onclick="fcCheck();">
+			<input type="button" value="Submit" onclick="fcCheck();">
 		</form>
 		<p id="fcCloser"></p>
 		<br>
