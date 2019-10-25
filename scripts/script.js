@@ -97,7 +97,7 @@ function fcCheck(){
 	var ft = document.getElementById("fcCloser");
 
 	if (h == i || (tc1 == "food" && (tc2 == "community" || tc2.includes("friend") || tc2 == "strength") && tc3 == "wisdom" && (tc4 == "peace" || tc4 == "unity"))){
-		ft.innerHTML = "Congrats on making it this far! Email <a href='ursa@ursamajorsociety.org'>ursa@ursamajorsociety.org</a> with the code 'Mary Munford' to receive your initiation information.";
+		ft.innerHTML = "Congrats on making it this far! Email <a href='mailto:ursa@ursamajorsociety.org'>ursa@ursamajorsociety.org</a> with the code 'Mary Munford' to receive your initiation information.";
 		if (h < i){
 			document.cookie = "highestsolved="+i+";";
 		}
